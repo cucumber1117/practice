@@ -5,7 +5,9 @@
     color: #000000;
     background-color: #7296ab;
     padding: 20px 0;
+    display: flex;
     justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;

@@ -6,23 +6,24 @@ import styles from './Level4.module.css'
 const Level4=()=>{
   const navigate = useNavigate()
 
-  const front_handleClick = () => {
+  const goToLevel5 = () => {
     navigate('/Level5')
   }
 
-  const back_handleClick = () => {
+  const goToLevel3 = () => {
     navigate('/Level3')
   }
 
   return (
     <div>
       <Header title="レベル4"/>
+      <button className={styles.topButton} onClick={goToLevel3}>レベル3へ</button>
         <div className={styles.level4Container}>
-        <button className={styles.button1} onClick={back_handleClick}>レベル3へ</button>
-          <button className={styles.button}>あ</button>
-          <button className={styles.button}>い</button>
-          <button className={styles.button}>う</button>
+          <button className={styles.centerButton}>あ</button>
+          <button className={styles.centerButton}>い</button>
+          <button className={styles.centerButton}>う</button>
         </div>
+        <button className={styles.bottomLeftButton} onClick={goToLevel5}>レベル5へ</button>
     </div>
   )
 }
