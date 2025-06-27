@@ -1,0 +1,21 @@
+.level2Container {
+  height: 100vh;
+  display: flex;
+  justify-content: center; /* 横中央 */
+  align-items: center;     /* 縦中央 */
+  background-color: #f0f0f0;
+}
+
+.button {
+  padding: 16px 32px;
+  font-size: 18px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}

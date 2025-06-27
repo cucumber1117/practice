@@ -1,0 +1,38 @@
+.level4Container {
+    /*これは親箱*/
+    height: calc( 100vh - 140px );
+    position: relative;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center; /* 横中央 */
+    align-items: center;     /* 縦中央 */
+    flex-direction: column;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+  .button1 {
+    margin: 0;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    align-self: flex-start;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+  }
+  
+  .button {
+    padding: 16px 32px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    background-color: #414f58;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #2980b9;
+  }
