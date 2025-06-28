@@ -5,7 +5,9 @@ import './index.css'  // ここでindex.cssをインポート
 import Level1 from './pages/Level1/Level1'
 import Level2 from './pages/Level2/Level2'
 import Level3 from './pages/Level3/Level3'
-import Level4 from './pages/Level4/Level4'/*@fix:自分も最初は勘違いしていたが、.jsxファイルの呼び出しでは拡張子は付けなくていいらしい*/
+import Level4 from './pages/Level4/Level4'
+import Level5 from './pages/Level5/Level5'
+/*@fix:自分も最初は勘違いしていたが、.jsxファイルの呼び出しでは拡張子は付けなくていいらしい*/
 /*@1:遷移先ページが増えるごとにこの中にあるページも増え続ける*/
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -19,6 +21,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/level2" element={<Level2 />} />
         <Route path="/level3" element={<Level3 />} />
         <Route path="/level4" element={<Level4 />} />
+        <Route path="/level5" element={<Level5 />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
