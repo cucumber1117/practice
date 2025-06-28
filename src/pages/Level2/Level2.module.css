@@ -4,10 +4,12 @@
   justify-content: center; /* 横中央 */
   align-items: center;     /* 縦中央 */
   background-color: #f0f0f0;
+  gap: 20px; /*@fix: ← ボタン同士のすき間 */
 }
 
 .button {
-  padding: 16px 32px;
+  padding: 10px 20px;/*@fix:スマホの場合少しはみ出る恐れがあるためボタンを小さくした
+  　　　　　　　　　　　ちなみにボタンの大きさの変え方はpadding以外にも様々あるため一種の変え方として考えてくれればと思う*/
   font-size: 18px;
   background-color: #3498db;
   color: white;

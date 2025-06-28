@@ -1,0 +1,12 @@
+//@fix:jsonconfig.jsonファイルを作成して下記のようなコードを下記
+//既存のvite.config.js内にも変更を加えると、@でパス指定が可能になる
+//@はLevel3.jsxやLevel4.jsxなどで活用している
+{
+  "compilerOptions": {
+    "baseUrl": ".",  // プロジェクトのルートを基準にする
+    "paths": {
+      "@/*": ["src/*"]  // @ を src フォルダにマップ
+    }
+  },
+  "include": ["src"]  // src フォルダ内の全てをインクルード
+}

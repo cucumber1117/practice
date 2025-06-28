@@ -12,30 +12,29 @@
 }
 
 .topButton {
-  width: 200px;
-  height: 60px;
-  position: fixed;
-  top: 140px;
-  left: 0;
+  /*@fix:「absolute」で枠内での絶対座標。「fixed」で画面上の絶対座標として設定できる
+  基本的に画面上や下にボタンを固定表示させる際はHeader.jsx内にボタンを表示させる
+  コードもまとめて書いてしまうのが一般的。*/
+  position: absolute;/*　枠内の絶対座標　*/
+  width: 130px;
+  height: 35px;
+  top: 90px; /*@fix:Headerの高さに合わせて位置修正。ヘッダーは縦80pxぐらいを要するため90pxぐらいだとちょうどHeaderの下に来る*/
+  left: 10px;
   font-size: 18px;
   background-color: #3498db;
   color: white;
-  z-index: 1001;
-  border: none;
-  cursor: pointer;
-  padding: 8px 16px;
+  z-index: 1000;
+  border: none;/*ボタンの枠*/
+  cursor: pointer;/*ボタンの上にカーソルが来たら手のマークに変更*/
+  border-radius: 10px;/*ぼたんの丸みをつけることができる。丸みの単位は最初は　px　で考え解くとやりやすいかも*/
+
 }
 
-.centerButton {
-  width: 200px;
-  height: 60px;
-  font-size: 20px;
-  margin: 8px 0;
-  background-color: #414f58;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+.centerText {
+  
+  font-size: 30px;
+  margin: 5px 0px; /* 横方向に余白 */
+  color: black;
 }
 
 .centerButton:hover {
@@ -43,16 +42,16 @@
 }
 
 .bottomLeftButton {
-  width: 200px;
-  height: 60px;
-  position: fixed;
-  bottom: 20px;
-  left: 0;
-  bottom: 0;
+  width: 130px;
+  height: 35px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
   font-size: 18px;
   background-color: #2ecc71;
   color: white;
-  border: none;
-  cursor: pointer;
-  padding: 8px 16px;
+ border: none;/*ボタンの枠*/
+  cursor: pointer;/*ボタンの上にカーソルが来たら手のマークに変更*/
+  border-radius: 10px;/*ぼたんの丸みをつけることができる。丸みの単位は最初は　px　で考え解くとやりやすいかも*/
+
 }
