@@ -31,12 +31,14 @@
 }
 
 .centerText {
-  
   font-size: 30px;
   margin: 5px 0px; /* 横方向に余白 */
   color: black;
+  
+  /* 枠を追加 */
+  border: 2px solid black; /* 2pxの黒い枠 */
+  padding: 0px 50px; /* 枠とテキストの間に余白を追加 */
 }
-
 .centerButton:hover {
   background-color: #2980b9;
 }
