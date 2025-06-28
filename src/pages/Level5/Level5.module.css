@@ -12,13 +12,10 @@
   }
   
   .topButton {
-    /*@fix:「absolute」で枠内での絶対座標。「fixed」で画面上の絶対座標として設定できる
-    基本的に画面上や下にボタンを固定表示させる際はHeader.jsx内にボタンを表示させる
-    コードもまとめて書いてしまうのが一般的。*/
     position: absolute;/*　枠内の絶対座標　*/
     width: 130px;
     height: 35px;
-    top: 70px; /*@fix:Headerの高さに合わせて高さ修正。Headerが縦幅60pxのため70pxぐらいにセット*/
+    top: 70px;
     left: 10px;
     font-size: 18px;
     background-color: #3498db;
@@ -48,18 +45,23 @@
     background-color: #2980b9;
   }
   
-  .bottomLeftButton {
+  .bottomRightButton {
     width: 130px;
     height: 35px;
     position: absolute;
     bottom: 70px;
-    left: 10px;
+    right: 20px;/*@fix5:設計図では、レベル6へ移動するボタンは「右下」に表示されるように
+    なっている。しかし現在は left:10でになっていたため、これを right: 20 に変更し、右下に表示されるようにしておいた。
+    また、この位置を調整する際に知っておいてほしいポイントが一つあって。 left: 230 のように leftの数値を増やして無理やり右寄せしようとすると、
+    端末の画面サイズによってボタンの位置がズレて右端に表示されないことがあったりする。そのためこのright:20になっている部分を
+    left: 230でなどのようにleftを活用して数値を大きくすることで右端にボタンを表示させようとした際とright:20みたいな数値で画面右端に
+    ボタンを表示させようとした際の違いを試しに書き変えて感じ取ってくれればと思う。恐らくそれぞれ画面サイズを変えた際の動作が変わると思われる。*/
     font-size: 18px;
     background-color: #2ecc71;
     color: white;
-   border: none;/*ボタンの枠*/
+    border: none;/*ボタンの枠*/
     cursor: pointer;/*ボタンの上にカーソルが来たら手のマークに変更*/
     border-radius: 10px;/*ぼたんの丸みをつけることができる。丸みの単位は最初は　px　で考え解くとやりやすいかも*/
-  
+
   }
   
