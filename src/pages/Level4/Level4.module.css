@@ -18,7 +18,7 @@
   position: absolute;/*　枠内の絶対座標　*/
   width: 130px;
   height: 35px;
-  top: 70px; /*@fix:Headerの高さに合わせて高さ修正。*/
+  top: 70px; /*@fix:Headerの高さに合わせて高さ修正。Headerが縦幅60pxのため70pxぐらいにセット*/
   left: 10px;
   font-size: 18px;
   background-color: #3498db;
