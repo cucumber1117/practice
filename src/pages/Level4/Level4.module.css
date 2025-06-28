@@ -18,7 +18,7 @@
   position: absolute;/*　枠内の絶対座標　*/
   width: 130px;
   height: 35px;
-  top: 90px; /*@fix:Headerの高さに合わせて位置修正。ヘッダーは縦80pxぐらいを要するため90pxぐらいだとちょうどHeaderの下に来る*/
+  top: 50px; /*@fix:Headerの高さに合わせて高さ修正。*/
   left: 10px;
   font-size: 18px;
   background-color: #3498db;

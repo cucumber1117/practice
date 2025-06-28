@@ -5,26 +5,6 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
-    <style>
-      /*@fix:ここにあるhtmlファイルの効果は画面全土に反映されてしまうため
-      <style>タグを活用してこのhtmlファイルの中身に反映されるcssコードのレイアウトを
-      編集すれば画面端の変な余白を消すことが可能。*/
-      /* htmlとbodyのマージン、パディングをリセット */
-      html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;  /* 画面の高さを100%に */
-        width: 100%;   /* 画面の幅を100%に */
-        box-sizing: border-box;  /* パディングやボーダーを含めたサイズを設定 */
-        background-color: #f0f0f0; /* 任意の背景色 */
-      }
-
-      /* 画面全体に適用 */
-      #root {
-        height: 100%;
-        width: 100%;
-      }
-    </style>
   </head>
   <body>
     <div id="root"></div>

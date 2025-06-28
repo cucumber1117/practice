@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './index.css'  // ここでindex.cssをインポート
 import Level1 from './pages/Level1/Level1'
 import Level2 from './pages/Level2/Level2'
 import Level3 from './pages/Level3/Level3'
