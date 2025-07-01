@@ -32,7 +32,7 @@ const Level5 = () => {
         レベル4へ
       </button>
 
-      {/*@fix5:２重.mapで表示することで2次元リストを並べる。
+      {/*:２重.mapで表示することで2次元リストを並べる。
       (※ちなみにこの書き方はレベル6以降では多分使わないためこういう書き方があることだけ知ってくれればと思う)*/}
       <div className={styles.level5Container}>
         {groupedLists.map((list, columnIndex) => (
