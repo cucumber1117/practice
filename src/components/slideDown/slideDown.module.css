@@ -1,0 +1,28 @@
+.slideDown {
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: 300px;
+    background: #3498db;
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transition: transform 0.3s ease;
+    z-index: 2000;
+}
+.show {
+    transform: translate(-50%, 0);
+    opacity: 1;
+    pointer-events: auto;
+}
+.toggleButton{
+    position: fixed;
+    top:300px;
+    left: 50%;
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    transform: translateX(-50%);
+}

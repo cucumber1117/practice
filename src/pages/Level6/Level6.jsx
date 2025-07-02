@@ -25,14 +25,15 @@ const Level6 = () => {
   return (
     <div>
       <Header title="レベル6" />
-      
-      <button className={styles.topButton} onClick={goToLevel5}>
+      <div className={styles.topButton}>
+      <button className={styles.Button} onClick={goToLevel5}>
         レベル5へ
       </button>
-      <button className={styles.topButton2} onClick={goToLevel7}>
+      <button className={styles.Button} onClick={goToLevel7}>
         レベル7へ
       </button>
-      <div className={styles.level5Container}>
+      </div>
+      <div className={styles.level6Container}>
       <div className={styles.column}>
         <List names={List1} />
         <List names={List2} />
@@ -43,7 +44,7 @@ const Level6 = () => {
         </div>
       </div>
       
-      <Footer title="レベル5" />
+      <Footer title="レベル6" />
     </div>
   )
 }
