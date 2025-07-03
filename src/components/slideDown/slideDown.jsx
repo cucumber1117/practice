@@ -1,21 +1,22 @@
 import React, { useState } from 'react'
 import styles from './slideDown.module.css'
 
-const SlideDown=({ children })=>{
-    const [show,setShow] = useState(false)
+const SlideDown = ({ children }) => {
+  // 開閉状態を内部で管理
+  const [show, setShow] = useState(false)
 
-    const toggleShow = () => setShow(prev => !prev)
+  const toggleShow = () => setShow(prev => !prev)
 
-    return (
-        <>
-          <button className={styles.toggleButton} onClick={toggleShow}>
-            {show ? '閉じる' : '表示'}
-          </button>
-    
-          <div className={`${styles.slideDown} ${show ? styles.show : ''}`}>
-            {children}
-          </div>
-        </>
-      )
-    }
-    export default SlideDown
+  return (
+    <div className={styles.wrapper}>
+      <div className={`${styles.slideDown} ${show ? styles.show : ''}`}>
+        {children}
+      </div>
+      <button className={styles.toggleButton} onClick={toggleShow}>
+        {show ? '閉じる' : '表示'}
+      </button>
+    </div>
+  )
+}
+
+export default SlideDown

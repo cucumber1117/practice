@@ -1,11 +1,10 @@
 .name-list {
     list-style-type: none;
-    width: 300px;
+    width: 150px;
     font-size: 30px;
     text-align: center;
-    margin: 5px 0px; /* 横方向に余白 */
     color: black;
-    padding: 0px 50px; /* 枠とテキストの間に余白を追加 */
+    padding: 20px;
   }
 
   .name-item {
