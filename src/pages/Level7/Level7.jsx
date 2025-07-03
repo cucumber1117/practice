@@ -4,7 +4,7 @@ import Footer from '@/components/Footer/Footer'
 import List from '@/components/List/List'
 import styles from './Level7.module.css'
 import SlideDown from '@/components/SlideDown/SlideDown'
-import exampleImage from '@/assets/images/Camera.png'
+import exampleImage from '@/assets/images/Camera.png'//@fix7:基本的には画像はassetsフォルダ内にimagesフォルダを作成してその中に保存することが多いい。
 
 const Level7 = () => {
     const navigate = useNavigate()
@@ -28,6 +28,7 @@ const Level7 = () => {
                 <button className={styles.Button} onClick={goToLevel8}>
                     レベル8へ
                 </button>
+                {/*@fix7:で画像を表示*/}
                 <img src={exampleImage} alt="説明テキスト" className={styles.roundImage} />
             </div>
             <Footer title="レベル7" />
