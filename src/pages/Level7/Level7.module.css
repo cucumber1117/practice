@@ -1,20 +1,16 @@
-/* ボタンと画像を横並びにするコンテナ */
 .buttonContainer {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
   display: flex;
-  justify-content: space-between; /* 横幅いっぱいに均等配置 */
-  align-items: center;            /* 縦方向中央揃え */
-  width: 100%;                    /* 横幅100%に設定 */
-  margin: 0 auto;                 /* 中央揃え */
-  padding: 50px;
+  justify-content: center;       /* 中央に寄せる */
+  align-items: center;           /* 縦方向中央揃え */
+  gap: 25%;                     /* ボタンと画像の間隔 */
 }
-.row {
-  display: flex;    
-  justify-content: center;  /* 横方向の中央揃え */
-  align-items: center;      /* 縦方向の中央揃え (必要に応じて) */  
-}
-/* ボタンのスタイル */
+
 .Button {
-  width: 200px;
+  width: 100px;
   height: 50px;
   font-size: 18px;
   background-color: #3498db;
@@ -25,11 +21,16 @@
   position: relative;
 }
 
-/* 丸い枠付きの画像 */
 .roundImage {
-  width: 100px;  /* 画像の大きさ */
-  height: 100px; /* 画像の大きさ */
-  border-radius: 50%;  /* 丸くする */
-  border: 5px solid #007bff;  /* 枠線の色 */
-  object-fit: cover;  /* 画像のトリミング方法 */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #007bff;
+  object-fit: cover;
+  transform: translateY(-5px); /* 少し上にあげる */
+}
+.row {
+  display: flex;    
+  justify-content: center;  /* 横方向の中央揃え */
+  align-items: center;      /* 縦方向の中央揃え (必要に応じて) */  
 }
