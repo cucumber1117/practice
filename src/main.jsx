@@ -9,6 +9,7 @@ import Level4 from './pages/Level4/Level4'
 import Level5 from './pages/Level5/Level5'
 import Level6 from './pages/Level6/Level6'
 import Level7 from './pages/Level7/Level7'
+import Level8 from './pages/Level8/Level8'
 /*@fix:自分も最初は勘違いしていたが、.jsxファイルの呼び出しでは拡張子は付けなくていいらしい*/
 /*@1:遷移先ページが増えるごとにこの中にあるページも増え続ける*/
 createRoot(document.getElementById('root')).render(
@@ -19,13 +20,15 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         {/*@1:下記のようにpathを"/"にセットすると、最初にアプリが起動した際に開かれる画面として
         セットされる。他のページからそのページに移動したい場合はnavigate("/")という処理を実行*/}
-        <Route path="/" element={<Level1 />} />
+        <Route path="/" element={<Level8 />} />
+        <Route path="/level1" element={<Level1 />} />
         <Route path="/level2" element={<Level2 />} />
         <Route path="/level3" element={<Level3 />} />
         <Route path="/level4" element={<Level4 />} />
         <Route path="/level5" element={<Level5 />} />
         <Route path="/level6" element={<Level6 />} />
         <Route path="/level7" element={<Level7 />} />
+        <Route path="/level8" element={<Level8 />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
