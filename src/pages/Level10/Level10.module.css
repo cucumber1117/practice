@@ -1,0 +1,30 @@
+.level10Container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    flex-direction: column;
+}
+.centerButton{
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px 0;
+  }
+p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+  }

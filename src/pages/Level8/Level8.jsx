@@ -19,6 +19,7 @@ const Level8 = () => {
     { label: 'レベル7へ', path: 'level7' },
     { label: 'レベル8へ', path: 'level8' },
     { label: 'レベル9へ', path: 'level9' },
+    { label: 'レベル10へ', path: 'level10' },
   ]
   const handleClick = (path) => {
     navigate(`/${path}`);

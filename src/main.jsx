@@ -10,6 +10,8 @@ import Level5 from './pages/Level5/Level5'
 import Level6 from './pages/Level6/Level6'
 import Level7 from './pages/Level7/Level7'
 import Level8 from './pages/Level8/Level8'
+import Level9 from './pages/Level9/Level9'
+import Level10 from './pages/Level10/Level10'
 /*@fix:自分も最初は勘違いしていたが、.jsxファイルの呼び出しでは拡張子は付けなくていいらしい*/
 /*@1:遷移先ページが増えるごとにこの中にあるページも増え続ける*/
 createRoot(document.getElementById('root')).render(
@@ -29,6 +31,8 @@ createRoot(document.getElementById('root')).render(
         <Route path="/level6" element={<Level6 />} />
         <Route path="/level7" element={<Level7 />} />
         <Route path="/level8" element={<Level8 />} />
+        <Route path="/level9" element={<Level9 />} />
+        <Route path="/level10" element={<Level10 />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
