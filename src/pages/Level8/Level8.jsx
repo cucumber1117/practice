@@ -25,6 +25,8 @@ const Level8 = () => {
   const levels3=[
     { label: 'レベル11へ', path: 'level11' },
     { label: 'レベル12へ', path: 'level12' },
+    { label: 'レベル13へ', path: 'level13' },
+    { label: 'レベル14へ', path: 'level14' },
   ]
   const handleClick = (path) => {
     navigate(`/${path}`);
