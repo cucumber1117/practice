@@ -1,0 +1,23 @@
+.inputBlock {
+    display: flex;
+    margin-bottom: 8px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inputField {
+    flex: 1;
+    margin-right: 8px;
+    border-radius: 30px;
+  }
+  
+  .deleteButton {
+    background-color: #ff5555;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  

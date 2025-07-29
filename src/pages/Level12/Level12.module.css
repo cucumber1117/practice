@@ -1,0 +1,35 @@
+.level12Container {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap:30px
+  }
+  
+  .addButton {
+    width: 150px;
+    border-radius: 12px;
+    background-color: #5cdde4;
+    border: none;
+    margin: 10px 0;
+    padding: 8px 16px;
+  }
+  
+  .scrollContainer {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .bottomButton{
+    width: 200px;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+  }

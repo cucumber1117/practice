@@ -21,6 +21,11 @@ const Level8 = () => {
     { label: 'レベル9へ', path: 'level9' },
     { label: 'レベル10へ', path: 'level10' },
   ]
+
+  const levels3=[
+    { label: 'レベル11へ', path: 'level11' },
+    { label: 'レベル12へ', path: 'level12' },
+  ]
   const handleClick = (path) => {
     navigate(`/${path}`);
   };
@@ -32,6 +37,9 @@ const Level8 = () => {
       </div>
       <div className={styles['level-container']}>
         <Buttonlist items={levels2} onClick={handleClick} />
+      </div>
+      <div className={styles['level-container']}>
+        <Buttonlist items={levels3} onClick={handleClick} />
       </div>
     </div>
   );
